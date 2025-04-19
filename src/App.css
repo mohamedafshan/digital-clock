@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  color: #fff;
+}
+
+.digital-clock {
+  width: 600px;
+  height: 300px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.digital-clock:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.digital-clock h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow:
+    0 0 3px #0ff,
+    0 0 6px #0ff;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: 700;
+  color: #39ff14; /* Laser green */
+  font-family: 'Orbitron', sans-serif;
+  text-shadow:
+    0 0 2px #39ff14,
+    0 0 5px #39ff14;
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ff00ff; /* Neon pink */
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 2px #ff00ff,
+    0 0 4px #ff00ff;
+}
